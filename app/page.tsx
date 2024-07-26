@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import TopCards from "../components/TopCards";
 import Link from "next/link";
-import { FaArrowAltCircleDown } from "react-icons/fa";
+import { AiFillCaretDown } from "react-icons/ai";
 import ChartBar from "@/components/ChartBar";
 import Customers from "@/components/Customers";
 import TrackOrder from "@/components/TrackOrder";
@@ -20,9 +20,9 @@ export default function Home() {
             </div>
             <div className="flex items-center border rounded-lg p-2 bg-gray-100">
               <Link href="/">
-                <FaArrowAltCircleDown className="text-gray-500 mr-1 mt-2"/>
+                <AiFillCaretDown className="text-gray-500 mr-1 "/>
               </Link>
-                <h2 className=" p-1 mt-2   font-sans font-bold text-gray-500">June</h2>
+                <h2 className="     font-sans font-bold text-gray-500">June</h2>
             </div>    
           </div>
           <TopCards />
