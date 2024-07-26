@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Dawurobo from "../assests/dawurobo-logo.jpg";
+import Logo from "@/public/logo.png";
 import { UserCircle } from 'lucide-react';
 
 const Header = () => {
     return(
         <div className="flex justify-between px-4 pt-4 pb-4">
             <div className="flex items-center">
-            <Image src={Dawurobo} alt="Dawurobo-Logo" width={32} height={32} className="rounded-full mr-2"/>
+            <Image src={Logo} alt="Dawurobo-Logo" width={40} height={40} className="rounded-full mr-1"/>
             <h1 className="text-lg font-bold font-sans text-white">Dawurobo</h1>
             </div>
             <div className="flex items-center">

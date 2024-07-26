@@ -1,3 +1,4 @@
+import React from "react";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
     <html>
       <body>
         <div className="flex h-screen">
-        <Sidebar />
+        <Sidebar children={undefined} />
       <main className="flex-1 ">{children}</main>
         </div>
       

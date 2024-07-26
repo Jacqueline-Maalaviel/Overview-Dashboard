@@ -12,7 +12,7 @@ const TrackOrder = () => {
           <p className="text-2xl ">752</p>
           </div> 
           <p className=' flex justify-center  p-2  '>
-            <FaCheckCircle className='w-5 h-5 text-green-700' />
+            <FaCheckCircle className='w-5 h-5 text-blue-500' />
             
           </p>
         </div>
@@ -22,7 +22,7 @@ const TrackOrder = () => {
           <p className="text-2xl ">32</p>
           </div> 
           <p className=' flex justify-center  p-2  '>
-           <FaTimesCircle className='text-red-700 h-5 w-5'/>
+           <FaCheckCircle className='text-yellow-500 h-5 w-5'/>
           </p>
         </div>
         <div className="lg:col-span-1 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
@@ -31,7 +31,7 @@ const TrackOrder = () => {
           <p className="text-2xl ">457</p>
           </div> 
           <p className=' flex justify-center  p-2 '>
-            <FaCheckCircle className='text-gray-400 w-5 h-5' />
+            <FaCheckCircle className='text-green-500 w-5 h-5' />
           </p>
         </div>
         </div>
