@@ -1,65 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
+import React from 'react';
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+const data = [
+  {
+    name: 'Mon',
+    Amount: 2400,
+  },
+  {
+    name: 'Tue',
+    Amount: 2210,
+  },
+  {
+    name: 'Wed',
+    Amount: 2290,
+  },
+  {
+    name: 'Thurs',
+    Amount: 2000,
+  },
+  {
+    name: 'Fri',
+    Amount: 1181,
+  },
+  {
+    name: 'Sat',
+    Amount: 2500,
+  },
+  {
+    name: 'Sun',
+    Amount: 2100,
+  },
+];
+
 
 const ChartBar = () => {
-  const [chartData, setChartData] = useState({
-    datasets: [],
-  });
 
-  const [chartOptions, setChartOptions] = useState({});
-
-  useEffect(() => {
-    setChartData({
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        datasets: [
-            {
-                label: 'Sales GHC',
-                data: [18127, 22201, 19490, 17938, 24182, 32752, 22475],
-                borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: 'rgb(53, 162, 235, 0.4',
-              }, 
-        ]
-    })
-    setChartOptions({
-        plugins: {
-            legend: {
-                position: 'top',
-            },
-            title: {
-                display: true,
-                text: 'Revenue'
-            }
-        },
-        maintainAspectRatio: false,
-        responsive: true
-    })
-  }, [])
-
-  return (
-    <>
-      <div className='w-full md:col-span-1  lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white'>
-        <Bar data={chartData} options={chartOptions} />
+    return (
+      <div className='w-full md:col-span-1  lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white   flex justify-between  border  rounded-lg'>
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="Amount" fill="#8884d8" activeBar={<Rectangle fill="purple" stroke="blue" />} />
+          
+        </BarChart>
+      </ResponsiveContainer>
       </div>
-    </>
-  );
-};
+    );
+  }
 
-export default ChartBar;
+
+  export default ChartBar;

@@ -8,6 +8,7 @@ import ChartBar from "@/components/ChartBar";
 import Customers from "@/components/Customers";
 import TrackOrder from "@/components/TrackOrder";
 
+
 export default function Home() {
   return (
     <div  className="bg-blue-600">

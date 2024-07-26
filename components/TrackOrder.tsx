@@ -4,7 +4,7 @@ import { FaCheckCircle, FaCircle, FaDotCircle, FaTimesCircle } from 'react-icons
 const TrackOrder = () => {
     return(
         <div className='pt-6 px-4 pb-6'> 
-            <p className='text-gray-500 font-bold font-sans'>Track My Order</p>
+            <p className='text-gray-500 font-bold font-sans'>My Order</p>
         <div className="grid lg:grid-cols-3 gap-4  w-full  pt-2">
         <div className="lg:col-span-1 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
          <div className="flex flex-col w-full pt-1">
