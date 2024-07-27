@@ -54,7 +54,7 @@ const ChartBar = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="Amount" fill="#8884d8" activeBar={<Rectangle fill="purple" stroke="blue" />} />
+          <Bar dataKey="Amount" fill="#bb8fce" activeBar={<Rectangle fill="#7fb3d5" stroke="blue" />} />
           
         </BarChart>
       </ResponsiveContainer>

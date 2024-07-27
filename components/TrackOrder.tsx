@@ -12,7 +12,7 @@ const TrackOrder = () => {
           <p className="text-2xl ">752</p>
           </div> 
           <p className=' flex justify-center  p-2  '>
-            <FaCheckCircle className='w-5 h-5 text-blue-500' />
+            <FaCheckCircle className='w-5 h-5 text-red-500' />
             
           </p>
         </div>
