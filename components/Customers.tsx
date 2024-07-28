@@ -1,6 +1,5 @@
 import React from "react";
 import { PieChart, Pie, Tooltip } from "recharts";
-import { text } from "stream/consumers";
 
 type data = [
   {name: string, value: number}
