@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCheckCircle, FaCircle, FaDotCircle, FaTimesCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 const TrackOrder = () => {
     return(
