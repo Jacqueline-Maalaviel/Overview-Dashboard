@@ -27,8 +27,9 @@ export default function Home() {
           </div>
           <TopCards />
             <div className='p-4 grid md:grid-cols-2 grid-cols-1 gap-4'>
+            <Customers />
               <ChartBar />
-              <Customers />
+              
             </div> 
             <div >
               <TrackOrder />
