@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaBell, FaChartLine, FaCircle, FaCog, FaCriticalRole, FaHome, FaSignOutAlt, FaUser } from 'react-icons/fa';
+import { FaBell, FaChartLine, FaCircle, FaCog, FaHome, FaSignOutAlt, FaUser } from 'react-icons/fa';
+
+export interface SidebarProps {
+    children?: React.ReactNode;
+}
 
 
-const Sidebar = ({ children }) => {
+const Sidebar = ({ children }: SidebarProps) => {
     return(
         <div className='flex'>
             <div className='fixed v-20 h-screen p-3 bg-white border-r-[1px] flex flex-col justify-between'>
