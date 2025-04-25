@@ -11,9 +11,9 @@ import TrackOrder from "@/components/TrackOrder";
 
 export default function Home() {
   return (
-    <div  className="bg-blue-100">
+    <div  className="bg-blue-200">
       <Header />
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-gray-100 min-h-screen">
           <div className="flex justify-between px-4 pt-4 pb-4">
             <div className="flex items-center">
               <h1 className="ml-4 mt-2 font-sans font-bold text-gray-700 text-lg">My Dashboard</h1>
