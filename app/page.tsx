@@ -11,9 +11,9 @@ import TrackOrder from "@/components/TrackOrder";
 
 export default function Home() {
   return (
-    <div  className="bg-blue-600">
+    <div  className="bg-blue-100">
       <Header />
-        <div className="bg-blue-100 min-h-screen">
+        <div className="bg-gray-50 min-h-screen">
           <div className="flex justify-between px-4 pt-4 pb-4">
             <div className="flex items-center">
               <h1 className="ml-4 mt-2 font-sans font-bold text-gray-700 text-lg">My Dashboard</h1>
@@ -22,7 +22,7 @@ export default function Home() {
               <Link href="/">
                 <AiFillCaretDown className="text-gray-500 mr-1 "/>
               </Link>
-                <h2 className="     font-sans font-bold text-gray-500">June</h2>
+                <h2 className="font-sans font-bold text-gray-500">June</h2>
             </div>    
           </div>
           <TopCards />
